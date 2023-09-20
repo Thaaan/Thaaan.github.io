@@ -38,10 +38,22 @@ div {
     margin-right: 30px;
     border-radius: 50%;
 }
+.circle:hover {
+    opacity: 0.5;
+}
+#second-row .circle:hover {
+    transform: scale(1.25);
+}
+#third-row .circle {
+    background: #de6868;
+}
+.circle:first-child {
+    opacity: 0;
+}
 .square {
     width: 60px;
     height: 60px;
-    background: white;
+    background: #e67e22;
     display: inline-block;
     margin-right: 30px;
 }
@@ -55,4 +67,10 @@ div {
     border: 3px inset rgba(74, 74, 74, 0.25);
     width: 54px;
     height: 54px;
+}
+.fancy.circle {
+    border-style: dotted;
+}
+.fancy, .green, .fancy.green {
+    background: #6392c0;
 }
