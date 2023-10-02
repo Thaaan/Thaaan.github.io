@@ -31,10 +31,12 @@
     margin: 15px;
     font-size: 30px;
     color: #3e0606;
+    font-family: 'Baloo Tammudu', sans-serif;
 }
 
 .item {
     margin: 15px;
+    font-family: 'DM Serif Display', serif;
 }
 
 .item p {

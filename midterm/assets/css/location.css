@@ -16,6 +16,9 @@
 .information h1 {
     font-family: 'Baloo Tammudu', sans-serif;
     text-align: center;
+    margin: 15px;
+    font-size: 30px;
+    color: #3e0606;
 }
 
 .information p {
@@ -24,7 +27,7 @@
     font-family: 'DM Serif Display', serif;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: #8c1919;
 }
 
 #hours {
@@ -35,6 +38,7 @@
     text-align: center;
     align-items: center;
     font-family: 'Baloo Tammudu', sans-serif;
+    color: #3e0606;
 }
 
 iframe {
