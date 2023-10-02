@@ -1,0 +1,20 @@
+body {
+    overflow-y: hidden;
+}
+
+.content {
+    min-height: calc(100vh - 150px);
+    position: relative;
+}
+
+#sketch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50%;
+    object-fit: cover;
+    z-index: 10;
+  }
+  
