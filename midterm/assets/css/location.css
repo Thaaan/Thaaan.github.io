@@ -1,0 +1,47 @@
+.content {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+}
+
+#phone {
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.information {
+    align-items: center;
+}
+
+.information h1 {
+    font-family: 'Baloo Tammudu', sans-serif;
+    text-align: center;
+}
+
+.information p {
+    padding: 10px;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#hours {
+    margin-top: 15%;
+}
+
+.maps {
+    text-align: center;
+    align-items: center;
+    font-family: 'Baloo Tammudu', sans-serif;
+}
+
+iframe {
+    width: 85%;
+    height: 450px;
+}
+
+.spacer {
+    width: 120px;
+}

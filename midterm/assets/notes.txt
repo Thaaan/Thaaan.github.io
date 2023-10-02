@@ -1,0 +1,37 @@
+### 1. **Warm Red**
+   - **Hex**: `#E63946`
+   - **Inspiration**: The rich reds found in Ethiopian spices and stews (like Berbere and Doro Wat).
+
+### 2. **Golden Yellow**
+   - **Hex**: `#F1C40F`
+   - **Inspiration**: The vibrant yellow found in turmeric, which is used in various Ethiopian dishes.
+
+### 3. **Earthy Brown**
+   - **Hex**: `#8B4513`
+   - **Inspiration**: The earthy tones of lentils, teff (used in injera), and the natural landscapes.
+
+### 4. **Fresh Green**
+   - **Hex**: `#27AE60`
+   - **Inspiration**: The greens from fresh vegetables and herbs used in Ethiopian cuisine.
+
+### 5. **Deep Maroon**
+   - **Hex**: `#800000`
+   - **Inspiration**: The deep, rich color of some Ethiopian stews and the traditional clothing.
+
+### 6. **Neutral Cream**
+   - **Hex**: `#FDFEFE`
+   - **Inspiration**: The lighter color of injera and a neutral to balance the vibrant colors.
+
+### 7. **Bold Orange**
+   - **Hex**: `#E67E22`
+   - **Inspiration**: The bright, bold colors found in Ethiopian spices and textiles.
+
+### 8. **Rich Purple**
+   - **Hex**: `#4A235A`
+   - **Inspiration**: The royal and rich aesthetic of Ethiopian culture and textiles.
+
+### Example Palette:
+- **Primary Colors**: Warm Red (`#E63946`), Golden Yellow (`#F1C40F`), and Earthy Brown (`#8B4513`).
+- **Accent Colors**: Fresh Green (`#27AE60`) and Bold Orange (`#E67E22`).
+- **Neutral/Base Colors**: Neutral Cream (`#FDFEFE`).
+- **Dark Accent**: Deep Maroon (`#800000`) or Rich Purple (`#4A235A`).

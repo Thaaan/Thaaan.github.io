@@ -1,0 +1,50 @@
+.content {
+    margin-top: 2%;
+}
+
+#menu {
+    text-align: center;
+    margin-left: 18.5%;
+    padding: 5px;
+    width: 63%;
+    background-color: #8c1919;
+    color: #f5eeee;
+    border-radius: 15px;
+}
+
+.menu-content {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr auto;
+}
+
+.left, .right, .middle {
+    text-align: center;
+    width: 100%;
+}
+
+.spacer {
+    width: 160px;
+}
+
+.menu-section h2 {
+    margin: 15px;
+    font-size: 30px;
+    color: #3e0606;
+}
+
+.item {
+    margin: 15px;
+}
+
+.item p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #a63d3d;
+}
+
+.item a {
+    font-size: 10px;
+    font-weight: light;
+    color: #3e0606;
+}
