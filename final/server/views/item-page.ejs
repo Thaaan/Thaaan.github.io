@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>ThaanAquatics | <%= item.Name %></title>
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Patrick Hand" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="/assets/js/script.js" defer></script>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="nav">
+            <div id="left">
+                <div class="search-container">
+                    <form action="/search" method="get">
+                      <input class="search" id="searchleft" type="search" name="q" placeholder="Search">
+                      <label class="button searchbutton" for="searchleft"><span class="mglass">&#9906;</span></label>
+                    </form>
+                  </div>
+            </div>
+            <div id="center">
+                <a href="/">
+                    <img src="/assets/img/logo.png" alt="TA" id="logo">
+                </a>
+            </div>
+            <div id="right">
+                <a href="">
+                    <img src="/assets/img/account-img.png" alt="Account">
+                </a>
+                <a href="javascript:void(0);" class="cart-container" id="cart">
+                    <img src="/assets/img/cart-img.png" alt="Cart" id="cart-icon">
+                    <!-- Dropdown container for cart items -->
+                    <div class="cart-dropdown" style="display: none;">
+                        <ul class="cart-items">
+                            <!-- Cart items will be dynamically inserted here -->
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="topbar">
+                    <div class="topbar-dropdown">
+                        <a>Catfish</a>
+                        <div class="topbar-dropdown-content">
+                            <a href="/products/Corydoras">Corydoras</a>
+                            <a href="/products/Plecostomus">Plecostomus</a>
+                        </div>
+                    </div>
+                    <a href="/products/Guppies">Guppies</a>
+                    <a href="/products/Mollies">Mollies</a>
+                    <a href="/products/Bettas">Bettas</a>
+                    <a href="/products/Feeders and Inverts">Feeders</a>
+                    <a href="/products/Plants">Plants</a>
+            </div>
+            
+            <div class="gallery">
+                <div class="breadcrumbs">
+                    <a href="/">Home</a> > <a href="/products/<%= item.Category %>"><%= item.Category %></a> > <a id="no-underline"><%= item.Name %></a>
+                </div>
+
+                <div class="item-content">
+                    <!-- Item image -->
+                    <div class="images">
+                        <% photos.forEach(function(photoPath) { %>
+                            <img src="<%= photoPath %>" alt="<%= item.Name %>">
+                        <% }); %>
+                    </div>
+                
+                    <!-- Item details -->
+                    <div class="item-details">
+                        <h1><%= item.Name %></h1>
+                        <p id="description"><%= item.Description %></p>
+                        <p><%= item.Quantity %> Left</p>
+                        <h2>Price: $<%= item.Price %></h2>
+                        <input type="number" id="quantity" name="quantity" min="1" max="<%= item.Quantity %>" value="1">
+                        <% if (item.Quantity && item.Quantity > 0) { %>
+                            <button class="add-to-cart-btn" data-product-name="<%= item.Name %>" data-product-price="<%= item.Price %>">Add to Cart</button>
+                        <% } else { %>
+                            <button id="sold-out">Sold Out</button>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
