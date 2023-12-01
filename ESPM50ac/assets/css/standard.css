@@ -40,11 +40,13 @@ body {
     text-align: center;
     padding: 22px 28px;
     text-decoration: none;
+    transition: .35s;
 }
 
 .navbar a:hover {
     background-color: #ddd;
     color: black;
+    transition: .35s;
 }
 
 .navbar-arrow-wrapper {
@@ -75,12 +77,52 @@ h1 {
     cursor: default;
 }
 
+h2 {
+    width: 50%;
+    cursor: default;
+    margin-bottom: 25px;
+}
+
+#resources-info {
+    width: 80%;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
+a#resources-info:hover{
+    text-decoration: underline;
+}
+
 p {
     margin: 15px;
     font-size: 15px;
     line-height: 1.6;
     width: 50%;
     cursor: default;
+}
+
+.iframe-wrapper {
+    margin-top: 130px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+#break {
+    margin-bottom: 60px;
+}
+
+.bib-content p {
+    margin: 5px;
+}
+
+.bib-content {
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .fade {
