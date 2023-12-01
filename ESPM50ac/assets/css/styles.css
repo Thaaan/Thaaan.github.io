@@ -10,6 +10,16 @@ body {
     background-color: #fff;
 }
 
+a {
+    font-family: 'Patrick Hand', serif;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .navbar {
     list-style-type: none;
     overflow: hidden;
@@ -23,6 +33,24 @@ body {
     transition: transform 0.3s;
 }
 
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.8s;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 22px 28px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
 .navbar-arrow-wrapper {
     position: fixed;
     top: 0;
@@ -34,7 +62,7 @@ body {
 .navbar-arrow {
     display: inline-block;
     color: darkslategray;
-    font-size: 12px;
+    font-size: 18px;
     padding: 5px;
     cursor: pointer;
     transition: transform .3s;
@@ -43,24 +71,6 @@ body {
 .navbar-arrow-hidden {
     transform: translateY(-100%);
     transition: transform 0.5s;
-}
-
-.navbar-hidden {
-    transform: translateY(-100%);
-    transition: transform 0.8s;
-}
-
-.navbar a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
 }
 
 .container {
@@ -80,15 +90,17 @@ body {
 
 h2 {
     font-size: calc(8px + 2vw + 2vh);
+    cursor: default;
 }
 
 p {
     line-height: 1.5;
     font-size: calc(2px + 1vw + 1vh);
+    cursor: default;
 }
 
 .slides img {
-    width: 350px;
+    width: 550px;
 }
 
 .slide1 {
@@ -116,6 +128,7 @@ p {
     font-family: 'Patrick Hand', serif;
     font-size: 15px;
     margin-right: 150px;
+    transition: transform 0.3s ease;
 }
 
 .info img {
@@ -125,8 +138,13 @@ p {
     transition: transform 0.3s ease;
 }
 
-.info img:hover {
+.info:hover :first-child {
     transform: rotate(-100deg) scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.info:hover :last-child {
+    transform: scale(1.2) translateX(10px) translateY(3px);
     transition: transform 0.3s ease;
 }
   
@@ -137,13 +155,18 @@ p {
     align-items: center;
 }
 
-.wrapper {
+.column-wrapper {
     margin-top: -80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     gap: 35px;
+}
+
+#banner {
+    width: 70%;
+    height: 50%;
 }
 
 .slide2 p {
@@ -159,22 +182,34 @@ p {
     gap: 35px;
 }
 
-#left, #right {
+.slide4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.left, .right {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.text-entry {
-    opacity: 0; /* Start with the text invisible */
-    transform: translateY(50px); /* Increase the starting position further below */
+.slide3 .left {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fade {
+    opacity: 0;
+    transform: translateY(50px);
     visibility: hidden;
-    transition: opacity 0.7s ease-out, transform 0.7s ease-out; /* Lengthen the transition duration */
-  }
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
   
-  /* When the 'in-view' class is added, apply the transition */
-.text-entry.in-view {
-    opacity: 1; /* Make the text fully visible at the end */
-    transform: translateY(0); /* Move up to the natural position */
+.fade.in-view {
+    opacity: 1;
+    transform: translateY(0);
     visibility: visible;
 }
